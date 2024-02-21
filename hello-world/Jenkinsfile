@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis to the code'
+                echo 'hello world'
             }
         }
         stage('Compile') {
@@ -13,12 +14,13 @@ pipeline {
         }
         stage('Security Check') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run the security check against the application'
+                echo 'Welcome to Pipeline'
             }
         }
         stage('Run Unit Tests') {
             steps {
-                echo 'Run unit tests from the source code' 
+                echo 'Run unit tests from the source code'
             }
         }
         stage('Run Integration Tests') {
